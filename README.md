@@ -1,4 +1,5 @@
 # Owl Watch
+![Owl Watch Banner](https://res.cloudinary.com/dio0hmmst/image/upload/v1774913524/owl_watch_banner_oyhg4q.png)
 
 Owl Watch is an uptime monitoring system designed to help developers track the availability and performance of their websites, APIs, and services in real time.
 
