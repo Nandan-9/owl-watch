@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from ..models import Monitor
+import requests
 
 
 class MonitorCreateView(APIView):
@@ -13,7 +14,14 @@ class MonitorCreateView(APIView):
                 "message" : "payload is empyt"
             },status=400)
         print(data)
+        r = requests.get(data, timeout=5)
+        status = r.status_code == 200
+        response_time = r.elapsed.total_seconds()
+        print(r)
         return Response({
-            "message" : "monitor event added successfully"
+            "response" : {
+                "status" : status,
+                "reponse_time" : response_time
+            } 
         },status=200)
 
