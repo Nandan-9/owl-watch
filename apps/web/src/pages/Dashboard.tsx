@@ -1,3 +1,11 @@
+import MonitorForm from "../components/MonitorForms";
+
+
+
 export default function Dashboard() {
-  return <h1>Dashboard</h1>;
+    return (
+    <div style={{ padding: "40px" }}>
+      <MonitorForm />
+    </div>
+  );
 }
