@@ -1,0 +1,93 @@
+# ----------------------
+# Python / Django
+# ----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python version
+.python-version
+
+# Django static/media
+staticfiles/
+media/
+
+# Migrations (optional: keep if you want them tracked)
+**/migrations/*
+!**/migrations/__init__.py
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# ----------------------
+# Celery / Workers
+# ----------------------
+celerybeat-schedule
+celerybeat.pid
+
+# ----------------------
+# Redis
+# ----------------------
+dump.rdb
+*.rdb
+
+# ----------------------
+# Node / Frontend (Vite)
+# ----------------------
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------
+# IDE / Editor
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Docker
+# ----------------------
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------
+# Coverage / Testing
+# ----------------------
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# ----------------------
+# Misc
+# ----------------------
+uv.lock
