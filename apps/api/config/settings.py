@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 APP_MODE = os.getenv("APP_MODE", "self_hosted")
-
+CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
 
 INSTALLED_APPS = [
